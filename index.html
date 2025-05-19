@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav" data-aos="fade-down" data-aos-duration="800">
+      <div class="logo">
+        <img src="assets/Aswin-logo.png" alt="Aswin Suresh Logo" class="nav-logo-img">
+        Aswin Suresh
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" data-aos="fade-down" data-aos-duration="800">
+      <div class="logo">
+        <img src="assets/Aswin-logo.png" alt="Aswin Suresh Logo" class="nav-logo-img">
+        Aswin Suresh
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000">
+        <img src="./assets/profile-pic.png" alt="Aswin Suresh profile picture" />
+      </div>
+      <div class="section__text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aswin Suresh</h1>
+        <p class="section__text__p2">Business Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aswin-suresh-448785273/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/aswin397'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="about-containers">
+            <div class="details-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science<br /> MBA Data Analytics</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <p>
+              I'm an MBA student specializing in Data Analytics with a strong enthusiasm for marketing analytics and the intersection of business and technology.
+              I love turning data into actionable insights that drive smarter decisions. One of my favorite projects was building a full-stack movie recommendation platform using Django—it let me blend tech skills with user behavior analysis in a really fun and impactful way.
+              I was also selected for the Erasmus Exchange Program in Germany, which gave me valuable international exposure and fresh perspectives. I'm all about solving real problems, exploring the business-tech sweet spot, and connecting with like-minded people.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        data-aos="fade-up" data-aos-duration="800"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Explore My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="350">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="experience-sub-title">Data Analytics</h2>
+            <div class="article-container">
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+               <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+               <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Market Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableu</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="zoom-in" data-aos-duration="600" data-aos-delay="350">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        data-aos="fade-up" data-aos-duration="800"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ecommerce Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/Ecommerce'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/Ecommerce'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bitcoin Prediction Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/Bitcoin-Prediction-Analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/Bitcoin-Prediction-Analysis'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">IOT Energy System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/IOTMAJORPROJECT'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aswin397/IOTMAJORPROJECT'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        data-aos="fade-up" data-aos-duration="800"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-duration="800">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="contact-info-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aswinsuresh397@gmail.com">aswinsuresh397@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aswin-suresh-448785273/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer data-aos="fade-up" data-aos-duration="800">
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Aswin Suresh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // Initialize AOS
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+          once: true,
+          offset: 120,
+          easing: 'ease-out-back'
+        });
+      });
+    </script>
+  </body>
+</html>
